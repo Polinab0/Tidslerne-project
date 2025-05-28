@@ -885,7 +885,7 @@ Version: 1.0
   .burger-btn {
     display: block;
     position: fixed;
-    top: 15px;
+    top: 25px;
     left: 15px;
     z-index: 1100;
     background: none;
@@ -1164,16 +1164,24 @@ Version: 1.0
     display: none !important;
   }
   
+  .site-header .burger,
+  .site-header .burger-btn {
+    position: fixed !important;
+    top: 10px !important;    /* отступ сверху */
+    left: 15px !important;   /* отступ слева */
+    z-index: 2000 !important;/* поверх всего */
+  }
 
   .burger-btn {
     display: block;
     position: fixed;
-    top: 15px;
+    top: 0px;
     left: 15px;
     z-index: 1100;
     background: none;
     border: none;
     cursor: pointer;
+    margin-bottom: 20px;
   }
   .burger-btn span {
     display: block;
