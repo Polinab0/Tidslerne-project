@@ -27,7 +27,7 @@ get_header(); ?>
 <?php endif; ?>
 <main class="site-main">
 
-  <!-- Картинка из ACF -->
+
   <?php
   $image_url = get_field('page1_image_');
   if ($image_url) {
@@ -37,19 +37,19 @@ get_header(); ?>
   }
   ?>
 
-  <!-- Стандартный контент страницы -->
+
   <div class="content">
     <?php the_content(); ?>
   </div>
 
   </main>
 
-<hr class="full-line"> <!-- ВНЕ .site-main -->
+<hr class="full-line"> 
 
 
 
 
-  <!-- Первый блок — Page Blocks -->
+
   <div class="page-blocks">
     <?php
     $blocks = new WP_Query([
@@ -77,7 +77,7 @@ get_header(); ?>
     ?>
   </div>
 
-  <!-- Второй блок — Page Sections -->
+
 
   <div class="custom-blocks">
   <?php
@@ -147,7 +147,7 @@ get_header(); ?>
 
 
 
-<!-- Блок с заголовком и кнопками -->
+
 <div class="title-buttons-block">
   <div class="left-title">
     
@@ -215,7 +215,6 @@ get_header(); ?>
 
 
 
-<!-- Заголовок блока -->
 <div class="information-title-block">
   <?php
   $title = get_field('information_section_title');
@@ -225,7 +224,7 @@ get_header(); ?>
   ?>
 </div>
 
-<!-- Карточки -->
+
 <div class="information-section">
   <div class="information-grid-wrapper">
     <div class="information-grid">
@@ -267,7 +266,7 @@ get_header(); ?>
 
 
 
-<!-- Заголовок блока -->
+
 <div class="story-title-block">
   <?php
   $title = get_field('story_block_title');
@@ -277,7 +276,7 @@ get_header(); ?>
   ?>
 </div>
 
-<!-- Карточки -->
+
 <div class="story-section">
   <div class="story-grid">
     <?php
@@ -315,7 +314,7 @@ get_header(); ?>
   </div>
 </div>
 
-<!-- Линия Scroll -->
+
 <div class="scroll-line-container">
   <div class="scroll-line-with-arrow"></div>
 </div>

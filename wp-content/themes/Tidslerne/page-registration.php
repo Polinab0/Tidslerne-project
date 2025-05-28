@@ -5,7 +5,7 @@ Template Name: Registration
 get_header(); ?>
 
 <?php
-// Получаем логотип и контент из ACF
+
 $logo = get_field('registration_logo');
 $btn1 = get_field('button_1_text');
 $btn2 = get_field('button_2_text');
@@ -15,14 +15,14 @@ $login_text = get_field('login_button_text');
 $login_url = get_field('login_button_url');
 ?>
 
-<!-- Логотип -->
+
 <?php if ($logo): ?>
   <div class="registration-logo">
     <img src="<?php echo esc_url($logo); ?>" alt="Logo">
   </div>
 <?php endif; ?>
 
-<!-- Панель -->
+
 <div class="registration-wrapper">
   <div class="registration-panel">
     <button type="button"><?php echo esc_html($btn1); ?></button>

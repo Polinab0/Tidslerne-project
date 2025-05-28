@@ -16,24 +16,24 @@ Version: 1.0
     color: #333;
   }
   
-  /* Шапка сайта */
+ 
   .site-header {
     width: 100%;
     padding-left: 20px;
-    background-color: transparent; /* Прозрачный фон */
+    background-color: transparent; 
   }
   
-  /* Контейнер навигации */
+  
   .main-nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0  ;
     display: flex;
-    justify-content: center; /* Центрирует меню */
+    justify-content: center; 
     align-items: center;
   }
   
-  /* Меню */
+  
   .menu {
     display: flex;
     gap: 80px;
@@ -54,7 +54,7 @@ Version: 1.0
   
 
   
-  /* Главная секция */
+
   .site-main {
     max-width: 1200px;
     margin: 0 auto;
@@ -136,7 +136,7 @@ Version: 1.0
 
   .floating-box {
     position: fixed;
-    top: 110px; /* можно подвинуть выше/ниже */
+    top: 110px;
     right: 40px;
     background: rgb(249, 249, 249);
     border-radius: 20px;
@@ -188,7 +188,7 @@ Version: 1.0
     background-color: #93326D;
     border: none;
     width: 100vw;
-    margin: 50px 0 50px calc(-50vw + 50%); /* выравниваем по краю экрана */
+    margin: 50px 0 50px calc(-50vw + 50%);
   }
   
   
@@ -281,7 +281,7 @@ Version: 1.0
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* БЫЛО flex-start — заменили */
+    justify-content: center; 
     text-align: center;
   }
   
@@ -326,7 +326,7 @@ Version: 1.0
 
 .title-buttons-block {
   display: flex;
-  align-items: center; /* теперь центрирует кнопки по высоте заголовка */
+  align-items: center; 
   gap: 40px;
   padding: 0px 40px;
   margin-top: 100px;
@@ -334,12 +334,12 @@ Version: 1.0
   font-family: 'DM Sans', sans-serif;
 }
 
-/* Левая часть с заголовком */
+
 .left-title {
   flex: 1;
   min-width: 280px;
   max-width: 320px;
-  margin-left: 40px; /* сдвигаем заголовок правее */
+  margin-left: 40px; 
 }
 
 .left-title h2 {
@@ -351,18 +351,18 @@ Version: 1.0
   font-family: 'DM Sans', sans-serif;
 }
 
-/* Правая часть с кнопками */
+
 .right-buttons {
   display: flex;
   flex: 2;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 90px;
-  margin-left: 100px; /* сдвигаем кнопки ещё правее */
-  margin-top: 10px; /* кнопки чуть ниже */
+  margin-left: 100px; 
+  margin-top: 10px; 
 }
 
-/* Кнопки */
+
 .btn-box {
   padding: 12px 20px;
   background-color: #fff;
@@ -377,7 +377,7 @@ Version: 1.0
   font-family: 'DM Sans', sans-serif;
 }
 
-/* Ховер эффект */
+
 .btn-box:hover {
   background-color: #ffb8ec;
   border-color: #868686;
@@ -448,14 +448,14 @@ Version: 1.0
   .information-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 29px; /* Расстояние между карточками */
+    gap: 29px;
     justify-content: space-between;
     padding: 0 20px;
   }
   
   .info-box {
-    flex: 1 1 260px; /* Немного увеличим ширину */
-    max-width: 300px; /* Больше, чем раньше */
+    flex: 1 1 260px; 
+    max-width: 300px;
     padding: 0px 20px 20px 20px ;
     text-align: left;
     border-radius: 12px;
@@ -512,7 +512,7 @@ Version: 1.0
 
 
 
-/* Заголовок слева */
+
 .story-title-block {
     text-align: left;
    margin-top: 100px;
@@ -526,7 +526,7 @@ Version: 1.0
     font-size: 36px;
   }
   
-  /* Секция карточек */
+
   .story-section {
     padding: 0 20px;
   }
@@ -716,7 +716,7 @@ Version: 1.0
     max-width: 50%;
   }
   
-  /* Маленькие видео слева */
+
   .video-small iframe {
     width: 100%;
     height: 220px;
@@ -725,7 +725,7 @@ Version: 1.0
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   }
   
-  /* Большое видео справа */
+
   .video-large iframe {
     width: 100%;
     height: 370px;
@@ -734,7 +734,7 @@ Version: 1.0
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   }
   
-  /* Кнопка Se mere */
+ 
   .video-button-wrapper {
     margin-top: 20px;
   }
@@ -813,22 +813,22 @@ Version: 1.0
     margin-bottom: 8px;
   }
   
-  /* Серая линия — НЕ на всю ширину, а до карты */
+
 
   
   .footer-line-short {
-    width: calc(100% - 240px); /* уменьшено, чтобы линия чуть ближе к карте */
+    width: calc(100% - 240px); 
     height: 1px;
     background-color: #444;
     margin-top: 10px;
-    margin-bottom: -10px; /* сдвигаем вверх, “заходит” на карту */
+    margin-bottom: -10px; 
   }
   
   .footer-socials {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    margin: 30px 0 20px 70px; /* отступ слева — двигает вправо */
+    margin: 30px 0 20px 70px; 
   }
   
   .footer-socials img {
@@ -836,7 +836,7 @@ Version: 1.0
     height: 28px;
   }
   
-  /* Белая линия */
+
   .footer-line.white {
     background-color: #ccc;
     width: 100%;
@@ -844,7 +844,7 @@ Version: 1.0
     margin-bottom: 20px;
   }
   
-  /* Нижняя часть */
+
   .footer-bottom {
     display: flex;
     flex-wrap: wrap;
@@ -863,22 +863,25 @@ Version: 1.0
     color: #fff;
     text-decoration: underline;
   }
-/* Бургер и меню — по умолчанию скрыты */
+
 .burger-btn,
 .mobile-menu {
   display: none;
 }
 
 
+
+
+
 @media (min-width: 769px) and (max-width: 1024px)  {
 
 
-      /* Прячем стандартное меню */
+   
 .main-nav {
     display: none !important;
   }
   
-  /* Бургер-кнопка */
+
   .burger-btn {
     display: block;
     position: fixed;
@@ -897,13 +900,13 @@ Version: 1.0
     background-color: #93326D;
   }
   
-  /* Отключаем скролл страницы, когда меню открыто */
+  
   body.no-scroll {
     overflow: hidden;
     height: 100vh;
   }
   
-  /* Мобильное меню */
+
   .mobile-menu {
     display: none;
     position: fixed;
@@ -914,7 +917,7 @@ Version: 1.0
     background: white;
     z-index: 1099;
     padding: 20px 15px;
-    overflow: hidden; /* запрет скролла всей панели */
+    overflow: hidden;
     box-shadow: 4px 0 15px rgba(0,0,0,0.1);
   }
   
@@ -922,7 +925,7 @@ Version: 1.0
     display: block;
   }
   
-  /* Шапка меню */
+
   .menu-header {
     display: flex;
     justify-content: space-between;
@@ -937,7 +940,7 @@ Version: 1.0
     cursor: pointer;
   }
   
-  /* Поиск */
+
   .search-input {
     width: 100%;
     padding: 10px;
@@ -946,7 +949,7 @@ Version: 1.0
     margin-bottom: 10px;
   }
   
-  /* Список меню */
+
   .mobile-menu-list {
     list-style: none;
     padding: 0;
@@ -967,7 +970,7 @@ Version: 1.0
     display: block;
   }
   
-  /* Подменю */
+
   .mobile-menu-list li ul.submenu {
     margin-top: 10px;
     background: #f9f9f9;
@@ -981,7 +984,7 @@ Version: 1.0
 
   .menu-scroll-wrapper {
     overflow-y: auto;
-    max-height: calc(100vh - 760px); /* учитываем заголовок и поле поиска */
+    max-height: calc(100vh - 760px); 
     -webkit-overflow-scrolling: touch;
     padding-right: 5px;
   }
@@ -1008,7 +1011,7 @@ Version: 1.0
     border-radius: 6px;
   }
 
-    /* --- CardSection: 4 карточки в ряд --- */
+
     .card-grid {
       display: flex;
       flex-wrap: wrap;
@@ -1023,7 +1026,7 @@ Version: 1.0
       box-sizing: border-box;
     }
   
-    /* --- TitleButtonsBlock: 3 кнопки в ряд --- */
+  
     .right-buttons {
       display: flex;
       flex-wrap: wrap;
@@ -1037,7 +1040,7 @@ Version: 1.0
       text-align: center;
     }
   
-    /* --- ArticleSection: горизонтальный скролл с маленькими картинками --- */
+
     
     .article-grid-wrapper,
     .information-grid-wrapper {
@@ -1070,7 +1073,7 @@ Version: 1.0
     .article-box img,
   .info-box img {
     width: 100%;
-    height: 160px; /* одинаковая высота */
+    height: 160px; 
     object-fit: cover;
     border-radius: 10px;
   }
@@ -1087,14 +1090,13 @@ Version: 1.0
   
     
 
-    /* --- Компактный футер и карта --- */
     .site-footer {
         width: 100%;
         overflow: visible;
         position: relative;
         z-index: 1;
-        padding-bottom: 650px; /* чтобы было место для нижней части */
-        background-color: #262626; /* или тот, который ты используешь */
+        padding-bottom: 650px; 
+        background-color: #262626; 
       }
       
       .footer-top,
@@ -1154,15 +1156,15 @@ Version: 1.0
 
 
 
-/* Только для мобильных экранов */
+
 @media (max-width: 768px) {
 
-   /* Прячем стандартное меню */
+  
 .main-nav {
     display: none !important;
   }
   
-  /* Бургер-кнопка */
+
   .burger-btn {
     display: block;
     position: fixed;
@@ -1181,13 +1183,13 @@ Version: 1.0
     background-color: #93326D;
   }
   
-  /* Отключаем скролл страницы, когда меню открыто */
+
   body.no-scroll {
     overflow: hidden;
     height: 100vh;
   }
   
-  /* Мобильное меню */
+
   .mobile-menu {
     display: none;
     position: fixed;
@@ -1198,15 +1200,15 @@ Version: 1.0
     background: white;
     z-index: 1099;
     padding: 20px 15px;
-    overflow: hidden; /* запрет скролла всей панели */
+    overflow: hidden; 
     box-shadow: 4px 0 15px rgba(0,0,0,0.1);
   }
   
   .mobile-menu.active {
     display: block;
   }
-  
-  /* Шапка меню */
+
+
   .menu-header {
     display: flex;
     justify-content: space-between;
@@ -1221,7 +1223,7 @@ Version: 1.0
     cursor: pointer;
   }
   
-  /* Поиск */
+
   .search-input {
     width: 100%;
     padding: 10px;
@@ -1230,7 +1232,7 @@ Version: 1.0
     margin-bottom: 10px;
   }
   
-  /* Список меню */
+
   .mobile-menu-list {
     list-style: none;
     padding: 0;
@@ -1251,7 +1253,7 @@ Version: 1.0
     display: block;
   }
   
-  /* Подменю */
+
   .mobile-menu-list li ul.submenu {
     margin-top: 10px;
     background: #f9f9f9;
@@ -1265,7 +1267,7 @@ Version: 1.0
 
   .menu-scroll-wrapper {
     overflow-y: auto;
-    max-height: calc(100vh - 320px); /* учитываем заголовок и поле поиска */
+    max-height: calc(100vh - 320px); 
     -webkit-overflow-scrolling: touch;
     padding-right: 5px;
   }
@@ -1312,7 +1314,7 @@ Version: 1.0
     }
 
 
-   /* Заголовки ближе к краю */
+
    .story-title,
    .video-section-title,
    .information-title-block,
@@ -1323,7 +1325,7 @@ Version: 1.0
      text-align: left;
    }
  
-   /* TitleButtonsBlock: один элемент в ряду + прокрутка */
+
    .right-buttons {
      flex-wrap: nowrap;
      overflow-x: auto;
@@ -1344,11 +1346,11 @@ Version: 1.0
      }
      
      .right-buttons .btn-box:hover {
-       background-color: #ffb8ec; /* розовый фон при наведении */
-       color: #000; /* цвет текста */
+       background-color: #ffb8ec; 
+       color: #000; 
        border-color: #ffb8ec;
      }
-   /* CardSection: 2 на 1 ряд */
+
  
        .card-grid {
          display: flex;
@@ -1365,13 +1367,13 @@ Version: 1.0
     
       
  
-   /* Подстройка футера */
+
    .footer-bottom {
      flex-direction: column;
      gap: 10px;
      margin-left: 0;
      text-align: center;
-     padding-bottom: 200px; /* чтобы было место для нижней части */
+     padding-bottom: 200px;
    }
  
    .footer-socials {
@@ -1395,7 +1397,7 @@ Version: 1.0
      max-width: 320px;
    }
 
-    /* Картинки в статьях */
+
     .article-grid {
         display: flex;
       flex-wrap: nowrap;
@@ -1415,7 +1417,7 @@ Version: 1.0
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
       }
-    /* Кнопка Se mere */
+   
     .video-button {
       width: 100%;
       margin-top: 20px;
@@ -1443,7 +1445,7 @@ Version: 1.0
     }
   
     .information-grid-wrapper::-webkit-scrollbar {
-      display: none; /* скрыть полосу прокрутки */
+      display: none; 
     }
   }
 
@@ -1639,7 +1641,7 @@ Version: 1.0
 
 
   .registration-heading-wrapper {
-    background-color: #91af50; /* нежно-зелёный */
+    background-color: #91af50; 
     border-radius: 20px;
     padding: 20px 30px;
     max-width: 600px;
@@ -1805,7 +1807,7 @@ Version: 1.0
           box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
       
-        /* ИКОНКИ */
+       
 
         .icon-mobile {
             width: 50px;
@@ -1820,8 +1822,7 @@ Version: 1.0
           .info-top-icons {
             display: none;
           }
-          
-          /* Показать только на мобильных */
+ 
       
             .info-top-icons {
               display: flex;
@@ -1833,7 +1834,7 @@ Version: 1.0
           
         
           
-            /* Перемещаем иконки в поток */
+           
             .left-block::before {
               content: "";
               display: block;
@@ -1858,7 +1859,7 @@ Version: 1.0
               margin: 30px auto 15px;
             }
           
-            /* Скрыть оригинальные иконки */
+           
             .info-top-icons {
               display: none;
             }
@@ -1956,8 +1957,8 @@ Version: 1.0
 
 
 
+/* LogIn Page*/
 
-/* Login page */
 
   .login-signup-wrapper {
     display: flex;
@@ -2012,7 +2013,7 @@ Version: 1.0
 
 
 
-/* KOST & KROP page */ 
+/* KOST & KROP Page */
 
 
   .kostrad-hero {
@@ -2028,23 +2029,23 @@ Version: 1.0
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
   
-  /* Белый блок под картинкой */
+
   .kostrad-card-container {
     background-color: white;
     padding: 40px 20px;
-    margin-top: -40px; /* Чуть заходит на картинку */
+    margin-top: -40px; 
     border-radius: 20px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
   
-  /* Сетка карточек */
+
   .cards-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Две карточки в ряд */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 30px;
-    justify-items: center; /* Центрируем карточки */
+    justify-items: center; 
   }
   
   
@@ -2053,33 +2054,33 @@ Version: 1.0
     border-radius: 15px;
     padding: 15px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    width: 90%; /* Каждая карточка чуть уже */
-    max-width: 280px; /* Ограничим максимальную ширину */
+    width: 90%; 
+    max-width: 280px;
     text-align: left;
   }
   
   .kost-card img {
-    width: 100%; /* фото теперь занимает всю ширину карточки */
+    width: 100%; 
     height: auto;
     border-radius: 10px;
     margin-bottom: 10px;
   }
   
-  /* Заголовок */
+ 
   .kost-card h4 {
     margin: 0 0 8px;
     font-size: 16px;
     color: #333;
   }
   
-  /* Дата */
+
   .kost-card .date {
     font-size: 12px;
     color: #999;
     margin-bottom: 8px;
   }
   
-  /* Текст */
+
   .kost-card .excerpt {
     font-size: 14px;
     color: #555;
@@ -2093,17 +2094,17 @@ Version: 1.0
       display: flex;
       flex-direction: column;
       gap: 30px;
-      padding: 0 10px; /* чтобы не прижимались к краям */
+      padding: 0 10px;
     }
   
-    /* Обёртка для каждой пары карточек */
+
     .card-row-scroll {
       display: flex;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       gap: 15px;
       padding-bottom: 10px;
-      justify-content: center; /* центрируем карточки */
+      justify-content: center; 
     }
   
     .kost-card {
@@ -2123,5 +2124,12 @@ Version: 1.0
       height: auto;
       border-radius: 10px;
       margin-bottom: 10px;
+    }
+  }
+
+  @media (min-width: 1025px) {
+  
+    button.burger {
+      display: none !important;
     }
   }

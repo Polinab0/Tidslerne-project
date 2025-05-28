@@ -1,12 +1,12 @@
 <?php wp_footer(); ?>
 
 
-<!-- Подключаем простой JavaScript -->
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     console.log('✅ JavaScript загружен и работает!');
 
-    // === Поиск ===
+  
     const searchBtn = document.getElementById('search-button');
     const searchForm = document.getElementById('search-form');
 
@@ -23,7 +23,6 @@
       });
     }
 
-    // === Выпадающее меню TIDSLERNE ===
     const menuItem = document.querySelector('.menu li a[href="#"]');
     const dropdown = document.getElementById('custom-dropdown');
 
@@ -58,7 +57,7 @@
     while ($footer->have_posts()) : $footer->the_post();
   ?>
 
-  <!-- 5 колонок -->
+
   <div class="footer-top">
     <div class="footer-column">
       <h3><?php the_field('section1_title'); ?></h3>
@@ -117,11 +116,12 @@
 
   <p><?php the_field('map_address'); ?></p>
 </div>
-</div> <!-- end of .footer-top -->
-  <!-- Линия -->
+</div> 
+
   <div class="footer-line-short"></div>
 
-  <!-- Социальные иконки -->
+
+
   <div class="footer-socials">
   <?php $facebook_icon = get_field('footer_facebook_icon'); ?>
   <a href="<?php the_field('footer_facebook_link'); ?>">
@@ -166,10 +166,10 @@
   </a>
 </div>
 
-  <!-- Белая линия -->
+
   <div class="footer-line white"></div>
 
-  <!-- Нижние ссылки -->
+
   <div class="footer-bottom">
     <p><?php the_field('footer_link_row_one_text'); ?>
       <a href="<?php the_field('footer_link_row_one_url'); ?>"><?php the_field('footer_link_row_one_link_text'); ?></a>

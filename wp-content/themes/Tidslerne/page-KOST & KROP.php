@@ -7,13 +7,13 @@ get_header();
 ?>
 
 
-<!-- Зеленая картинка (не фон) -->
+
 <?php $bg_image = get_field('kostrag_bg'); ?>
 <?php if ($bg_image): ?>
   <div class="kostrad-hero" style="background-image: url('<?php echo esc_url($bg_image); ?>');"></div>
 <?php endif; ?>
 
-<!-- Белый блок с карточками -->
+
 <div class="kostrad-card-container">
   <div class="cards-grid">
 

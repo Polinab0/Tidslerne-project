@@ -14,7 +14,7 @@
  
 
 
-    <!-- Меню -->
+   
     <?php
       wp_nav_menu([
         'theme_location' => 'main-menu',
@@ -23,11 +23,11 @@
     ?>
     <button class="burger" onclick="document.querySelector('.menu').classList.toggle('active')">☰</button>
 
-    <!-- Поиск -->
+
     <div class="search-container">
       <button id="search-button" class="search-icon" aria-label="Search">
         <?php
-          // ПОЛУЧАЕМ ID страницы Page1
+         
           $page = get_page_by_title('Page1');
           if ($page) {
             $page_id = $page->ID;
@@ -68,7 +68,7 @@
 
 
 
-<!-- Мобильное меню -->
+
 <div class="mobile-menu" id="mobileMenu">
   <div class="menu-header">
     <span class="menu-logo">Tid<span style="color:#93326D;">søerne</span></span>
@@ -77,7 +77,7 @@
   
   <input type="text" placeholder="Søge" class="search-input" />
 
-  <!-- Обёртка для прокрутки -->
+
   <div class="menu-scroll-wrapper">
     <ul class="mobile-menu-list">
       <li><a href="<?php echo site_url('/'); ?>">HOME</a></li>
@@ -123,7 +123,27 @@
 </div>
 
 
+<form id="search-form" action="" method="get">
+  <input type="text" id="search-field" name="s" class="search-field" placeholder="Søge…">
+  <button type="submit" class="search-submit">OK</button>
+</form>
 
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var form = document.getElementById('search-form');
+  if (!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+   
+    var q = form.querySelector('input[name="s"]').value.trim().toLowerCase();
+    if (!q) return;
+  
+    var slug = q.replace(/\s+/g,'-').replace(/[^a-z0-9\-]/g,'');
+    
+    window.location.href = '<?php echo esc_js( home_url() ); ?>/' + encodeURIComponent(slug) + '/';
+  });
+});
+</script>
 
 
 
