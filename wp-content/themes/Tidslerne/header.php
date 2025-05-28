@@ -123,27 +123,9 @@
 </div>
 
 
-<form id="search-form" action="" method="get">
-  <input type="text" id="search-field" name="s" class="search-field" placeholder="Søge…">
-  <button type="submit" class="search-submit">OK</button>
-</form>
 
-<script>
-document.addEventListener('DOMContentLoaded', function(){
-  var form = document.getElementById('search-form');
-  if (!form) return;
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-   
-    var q = form.querySelector('input[name="s"]').value.trim().toLowerCase();
-    if (!q) return;
-  
-    var slug = q.replace(/\s+/g,'-').replace(/[^a-z0-9\-]/g,'');
-    
-    window.location.href = '<?php echo esc_js( home_url() ); ?>/' + encodeURIComponent(slug) + '/';
-  });
-});
-</script>
+
+
 
 
 
